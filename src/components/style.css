@@ -1,6 +1,6 @@
-.jumbotron {
+.navbarbackground {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(31, 7, 168) !important;
+    background-color: rgb(120, 103, 216) !important;
     color: white;
   }
   
@@ -24,14 +24,3 @@
     padding: 10px;
   }
   
-  thead span.descending::after {
-    content: "⬇";
-    display: inline-block;
-    margin-left: 3px;
-  }
-  
-  thead span.ascending::after {
-    content: "⬆";
-    display: inline-block;
-    margin-left: 3px;
-  }
