@@ -1,6 +1,8 @@
 # Employee Directory
 An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name..
 
+## Live App
+https://pkamble35.github.io/employee-directory/
 
 ## Table of Contents 
 ==================================
