@@ -1,6 +1,6 @@
 .jumbotron {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: maroon !important;
+    background-color: rgb(31, 7, 168) !important;
     color: white;
   }
   
@@ -15,7 +15,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #003366;
+    background-color: #8d8f91;
     color: white;
   }
   
