@@ -6,6 +6,7 @@ class UserContainer extends React.Component {
     //set initial state
     constructor(props) {
         super(props);
+        this.handleSearch = this.handleSearch.bind(this);
         this.state = {
             users: [],
             search: "",
@@ -17,19 +18,26 @@ class UserContainer extends React.Component {
         console.log('in use effect');
         API.usersList().then(res => {
             console.log(res);
-            let users = res.data.results.map(user =>{
+            let users = res.data.results.map(user => {
                 return {
-                    name :user.name.first + ' ' + user.name.last,
+                    name: user.name.first + ' ' + user.name.last,
                     picture: user.picture.thumbnail,
                     email: user.email,
                     age: user.dob.age
                 }
             });
-            this.setState({users:users});
+            this.setState({ users: users });
         });
     }
+    handleSearch(e){
+        this.setState({ search: e.target.value.toUpperCase() });
+    }
+    filterUsers() {
+        console.log(this.state.search);       
+        return this.state.users.filter((item) => item.name.toUpperCase().includes(this.state.search));
+    }
     renderList() {
-        return this.state.users.map((user,index)=>{
+        return this.filterUsers().map((user, index) => {
             return (
                 <tr key={index}>
                     <td><img src={user.picture}></img></td>
@@ -39,7 +47,7 @@ class UserContainer extends React.Component {
                 </tr>
             );
         });
-       
+
     }
 
     render() {
@@ -48,7 +56,7 @@ class UserContainer extends React.Component {
                 <div className="input-group justify-content-center">
                     <div className="input-group-prepend"></div>
                     <input
-                        onChange={this.handleSearchChange}
+                        onChange={this.handleSearch}
                         type="search"
                         className="form-control m-3"
                         placeholder="Search"
@@ -57,7 +65,7 @@ class UserContainer extends React.Component {
                     />
                 </div>
                 <div>
-                    <Table striped bordered hover>
+                    <Table>
                         <thead>
                             <tr>
                                 <th>Picture</th>
