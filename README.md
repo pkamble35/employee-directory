@@ -19,10 +19,10 @@ Below command should be executed npm run start
 Use this application to track employee information.
 ## Screenshots
 Home Page
-![Home](/assets/pic1.jpg)
+![Home](/assets/pic1.png)
 Search
-![Search](/assets/pic2.jpg)
-Dashboard
+![Search](/assets/pic2.png)
+Sort
 ![Sort](/assets/pic3.png)
 ## Contribution
 To contribute to this project, please make sure you follow the guidelines in The Contributor Covenant as general guidelines.
