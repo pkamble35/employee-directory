@@ -8,6 +8,7 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
+* [Screenshots](#Screenshots)
 * [Test](#Test)
 
 
@@ -16,7 +17,12 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 Below command should be executed npm run start
 ## Usage
 Use this application to track employee information.
-
+Home Page
+![Home](/assets/pic1.jpg)
+add exercise
+![Search](/assets/pic2.jpg)
+Dashboard
+![Sort](/assets/pic3.png)
 ## Contribution
 To contribute to this project, please make sure you follow the guidelines in The Contributor Covenant as general guidelines.
 ## Test
